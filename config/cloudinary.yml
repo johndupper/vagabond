@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: teamone111
+  api_key: '155254475793369'
+  api_secret: 35j5Q7L258LnNYYVWtTaUP82MQU
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: teamone111
+  api_key: '155254475793369'
+  api_secret: 35j5Q7L258LnNYYVWtTaUP82MQU
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: teamone111
+  api_key: '155254475793369'
+  api_secret: 35j5Q7L258LnNYYVWtTaUP82MQU
+  enhance_image_tag: true
+  static_image_support: false
