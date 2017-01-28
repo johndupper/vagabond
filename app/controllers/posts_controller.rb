@@ -12,13 +12,15 @@ class PostsController < ApplicationController
   end
 
  def create
-    @post = Post.new(post_params)
-
-   if @post.save
-      redirect_to @post
-    else
-      render 'new'
-    end
+    @city = City.find(params[:city_id])
+	@post = @city.posts.create(post_params)
+	
+	redirect_to city_path(@city)
+#   if @post.save
+#      redirect_to @post
+#    else
+#      redirect_to post_path(@post)
+#    end
   end
   
 
@@ -37,14 +39,19 @@ class PostsController < ApplicationController
   # end
 
  def destroy
-    @post = Post.find(params[:id])
+	@city = City.find(params[:city_id])
+    @post = @city.posts.find(params[:id])
 
-   @post.destroy
-    redirect_to posts_path
+    @post.destroy
+    redirect_to city_path(@city)
+#    @post = Post.find(params[:id])
+#
+#   @post.destroy
+#    redirect_to posts_path
   end
 
  private
   def post_params
-    params.require(:post).permit(:title, :description, :user)
+    params.require(:post).permit(:title, :description, :user, :experience, :photo_url)
   end
 end
