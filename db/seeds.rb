@@ -32,6 +32,8 @@ Post.create(title: "The Vortex",
             city_id: atlanta.id)
 
 
+
+
 # create_table "posts", force: :cascade do |t|
 #   t.string   "title"
 #   t.text     "description"
