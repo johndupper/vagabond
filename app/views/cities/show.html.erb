@@ -3,8 +3,22 @@
 <h4><%= @city.country %></h4>
 
 
+<<<<<<< HEAD
 <h4>Posts linked to this city:</h4>
 <!--< @city.posts %>-->
 
 <h2>Add a comment:</h2>
 <%= render 'posts/posts' %>
+=======
+<h4>Comments</h4>
+<!-- < %= render @city.posts %> -->
+
+<h2>Add a comment:</h2>
+<%= render 'posts/form' %>
+
+<% @posts.each do |post| %>
+    <p><%= post.title %></p>
+    <p><%= post.description %></p>
+    <p><%= post.user %></p>
+<% end %>
+>>>>>>> 8467d7d0b2aa3e6b23837af0fe491b751bc0f0b0
