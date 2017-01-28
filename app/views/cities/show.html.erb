@@ -4,7 +4,13 @@
 
 
 <h4>Comments</h4>
-<%= render @city.posts %>
+<!-- < %= render @city.posts %> -->
 
 <h2>Add a comment:</h2>
 <%= render 'posts/form' %>
+
+<% @posts.each do |post| %>
+    <p><%= post.title %></p>
+    <p><%= post.description %></p>
+    <p><%= post.user %></p>
+<% end %>
