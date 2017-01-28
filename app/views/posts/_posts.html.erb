@@ -1,29 +1,16 @@
 <h1>POSTS:</h1>
 
-<!--
-<p>
-	< post.user %>
-</p>
--->
+<% @posts.each do |post| %>
+	<p>USER: <%= post.user %></p>
+    <p>Title:<%= post.title %></p>
+    <p>Description:<%= post.description %></p>
+    <p>Experience: work, live, or play?<%= post.experience %></p>
+	<p>Photo: <%=image_tag(post.photo_url) %></p>
+	<p><%= post.created_at %></p>
+	<p>
+		<%= link_to "Delete", [post.city, post], method: :delete %>
+	</p>
+<% end %>
 
-<!--
-<p>
-	< post.title %>
-</p>
 
-<p>
-	<= post.description %>
-</p>
-
-<p>
-	< post.experience %>
-</p>
-
-<p>
-	< post.photo_url %>
-</p>
-
-<p>
-	< link_to "destroy Post", [post.city, post], method: :delete, data: { confirm: "Are you sure?"} %>
-</p>
 -->

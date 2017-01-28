@@ -39,21 +39,7 @@ Post.create(title: " POST TITLE 2 ",
             photo_url: "http://wgcl.images.worldnow.com/images/27419436_SA.jpg",
             city_id: sanfrancisco.id)
 
-<<<<<<< HEAD
 
-
-# create_table "posts", force: :cascade do |t|
-#   t.string   "title"
-#   t.text     "description"
-#   t.string   "user"
-#   t.text     "experience"
-#   t.string   "photo_url"
-#   t.integer  "city_id"
-#   t.datetime "created_at",  null: false
-#   t.datetime "updated_at",  null: false
-#   t.index ["city_id"], name: "index_posts_on_city_id", using: :btree
-# end
-=======
 Post.create(title: "POST TITLE 3",
             description: "You get to smoke indoors, and if you're lucky, you get to go with Kim!",
             user: "John",
@@ -74,4 +60,4 @@ Post.create(title: "POST TITLE 5",
             experience: "Bar",
             photo_url: "http://wgcl.images.worldnow.com/images/27419436_SA.jpg",
             city_id: paris.id)
->>>>>>> 8467d7d0b2aa3e6b23837af0fe491b751bc0f0b0
+
