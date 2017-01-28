@@ -1,10 +1,10 @@
-<h2><%= @city.city_name%> <a href="/cities/<%= @city.id %>/edit">(edit)</a></h2>
+<h2><%= @city.city_name %> <a href="/cities/<%= @city.id %>/edit">(edit)</a></h2>
 
 <h4><%= @city.country %></h4>
 
 
-<h4>Comments</h4>
-<%= render @city.posts %>
+<h4>Posts linked to this city:</h4>
+<!--< @city.posts %>-->
 
 <h2>Add a comment:</h2>
 <%= render 'posts/posts' %>

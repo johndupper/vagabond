@@ -1,28 +1,27 @@
 class PostsController < ApplicationController
-  def index
-    @posts = Post.all
-  end
+#  def index
+#    @posts = Post.all
+#  end
 
- def show
-    @post = Post.find(params[:id])
-  end
+# def show
+#    @post = Post.find(params[:id])
+#  end
 
- def new
-    @post = Post.new
-  end
+# def new
+#    @post = Post.new
+#  end
 
  def create
     @city = City.find(params[:city_id])
 	@post = @city.posts.create(post_params)
 	
 	redirect_to city_path(@city)
-#   if @post.save
+  end
+  #   if @post.save
 #      redirect_to @post
 #    else
 #      redirect_to post_path(@post)
 #    end
-  end
-  
 
  # def edit
   #   @post = Post.find(params[:id])
@@ -43,11 +42,7 @@ class PostsController < ApplicationController
     @post = @city.posts.find(params[:id])
 
     @post.destroy
-    redirect_to city_path(@city)
-#    @post = Post.find(params[:id])
-#
-#   @post.destroy
-#    redirect_to posts_path
+#    redirect_to city_path(@city)
   end
 
  private

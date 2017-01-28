@@ -1,4 +1,4 @@
-<%= form_for([@city, @city.posts.build]) do |f| %>
+<%= form_for(@cities, @city.posts.build) do |f| %>
   <p>
     <%= f.label :user %>
     <%= f.text_field :user %>
@@ -17,6 +17,6 @@
   </p>
 
   <p>
-    <%= f.submit %>
+    <%= f.submit "submit" %>
   </p>
 <% end %>
