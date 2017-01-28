@@ -1,11 +1,15 @@
-<h2><%= link_to 'New Cities (+)', new_city_path %></h2>
-
 <ul>
-  <% @cities.each do |city| %>
-    <li>
-      <a href="/cities/<%= city.id %>">
-        <%= city.city_name %>
-      </a>
+  <h1>Start Exploring</h1>
+  <h3>Where do you want to go?</h3>
+
+  <ul>
+    <% @cities.each do |city| %>
+        <li>
+          <h1>
+            <a href="/cities/<%= city.id %>">
+              <%= city.city_name %>
+            </a>
+          </h1>
     </li>
   <% end %>
 </ul>

@@ -29,7 +29,8 @@ Post.create(title: "The Vortex",
             user: "John",
             experience: "Bar",
             photo_url: "http://wgcl.images.worldnow.com/images/27419436_SA.jpg",
-            city_id: atlanta)
+            city_id: atlanta.id)
+
 
 # create_table "posts", force: :cascade do |t|
 #   t.string   "title"
