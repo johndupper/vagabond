@@ -39,6 +39,7 @@ Post.create(title: " POST TITLE 2 ",
             photo_url: "http://wgcl.images.worldnow.com/images/27419436_SA.jpg",
             city_id: sanfrancisco.id)
 
+
 Post.create(title: "POST TITLE 3",
             description: "You get to smoke indoors, and if you're lucky, you get to go with Kim!",
             user: "John",
@@ -59,3 +60,4 @@ Post.create(title: "POST TITLE 5",
             experience: "Bar",
             photo_url: "http://wgcl.images.worldnow.com/images/27419436_SA.jpg",
             city_id: paris.id)
+
