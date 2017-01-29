@@ -8,13 +8,13 @@ class PostsController < ApplicationController
 
  # working on edit, requires update
  def edit
-   # @city = City.find(params[:id])
-   # @post = Post.find(params[:id])
+   @city = City.find(params[:city_id])
+   @post = @city.posts.find(params[:id])
  end
 
  def update
-   @city = City.find(params[:id])
-   @post = Post.find(params[:id])
+   @city = City.find(params[:city_id])
+   @post = @city.posts.find(params[:id])
    @post.update(post_params)
    redirect_to @city
  end
