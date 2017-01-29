@@ -1,16 +1,26 @@
-<h1>POSTS:</h1>
-
 <% @posts.each do |post| %>
-	<p>USER: <%= post.user %></p>
-    <p>Title:<%= post.title %></p>
-    <p>Description:<%= post.description %></p>
-    <p>Experience: work, live, or play?<%= post.experience %></p>
-	<p>Photo: <%=image_tag(post.photo_url) %></p>
-	<p><%= post.created_at %></p>
+<div class="panel panel-default">
+	<p>
+		Title: <%= post.title %>
+	</p>
+	<p>
+		USER: <%= post.user %>
+	</p>
+
+    <p>
+		Description: <%= post.description %>
+	</p>
+    <p>
+		Live, work, or play? <%= post.experience %>
+	</p>
+	<p id="userimage">
+		<%=image_tag(post.photo_url,  :height => 200, :crop => :fill) %>
+	</p>
+	<p>
+		Added: <%= post.created_at.strftime("%d %b. %Y") %>
+	</p>
 	<p>
 		<%= link_to "Delete", [post.city, post], method: :delete %>
 	</p>
+</div>
 <% end %>
-
-
--->

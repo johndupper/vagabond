@@ -1,3 +1,26 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+//	text-align: center;
+	margin: 50px;
+}
+
+//.city_post {
+//	border: 1px solid black;
+//	margin: 10px;
+//}
+
+
+.panel p {
+	margin: 20px;	
+}
+
+p img {
+	border-radius: 3px;
+}
+
+p title {
+	font-size: 26px;
+}
