@@ -1,15 +1,10 @@
+<h1>Where to?</h1>
 <ul>
-  <h1>Start Exploring</h1>
-  <h3>Where do you want to go?</h3>
-
-  <ul>
-    <% @cities.each do |city| %>
-        <li>
-          <h1>
-            <a href="/cities/<%= city.id %>">
-              <%= city.city_name %>
-            </a>
-          </h1>
+  <% @cities.each do |city| %>
+      <li>
+        <h1><a href="/cities/<%= city.id %>">
+          <%= city.city_name %> (<%= city.id %>)</a>
+        </h1>
     </li>
   <% end %>
 </ul>

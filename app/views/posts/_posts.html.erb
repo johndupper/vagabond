@@ -1,18 +1,10 @@
-<h1>POSTS:</h1>
+<button><%= link_to 'Back', cities_path %></button>
 
 <% @posts.each do |post| %>
-	<p>USER: <%= post.user %></p>
-    <p>Title:<%= post.title %></p>
+    <h3><%= post.title %> (<%= post.id %>)</h3>
     <p>Description:<%= post.description %></p>
     <p>Experience: work, live, or play?: <%= post.experience %></p>
-	<p>Photo: <%=image_tag(post.photo_url) %></p>
-	<p><%= post.created_at %></p>
-	<p>
-    <button>
-      <%= link_to 'Edit', edit_city_post_path(post.id) %>
-    </button>
-    <button>
-      <%= link_to "Delete", [post.city, post], method: :delete %>
-    </button>
-	</p>
+    <p>USER: <%= post.user %></p>
+    <p>Photo: <%=image_tag(post.photo_url) %></p>
+    <p><%= post.created_at %></p>
 <% end %>
