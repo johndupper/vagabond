@@ -20,7 +20,12 @@
 		Added: <%= post.created_at.strftime("%d %b. %Y") %>
 	</p>
 	<p>
-		<%= link_to "Delete", [post.city, post], method: :delete %>
+    <button>
+      <%= link_to 'Edit', edit_city_post_path(post.id) %>
+    </button>
+    <button>
+      <%= link_to "Delete", [post.city, post], method: :delete %>
+    </button>
 	</p>
 </div>
 <% end %>

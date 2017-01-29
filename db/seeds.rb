@@ -52,12 +52,12 @@ Post.create(title: "POST TITLE 4",
             user: "John",
             experience: "Bar",
             photo_url: "http://wgcl.images.worldnow.com/images/27419436_SA.jpg",
-            city_id: paris.id)
+            city_id: atlanta.id)
 
 Post.create(title: "POST TITLE 5",
             description: "You get to smoke indoors, and if you're lucky, you get to go with Kim!",
             user: "John",
             experience: "Bar",
             photo_url: "http://wgcl.images.worldnow.com/images/27419436_SA.jpg",
-            city_id: paris.id)
+            city_id: sanfrancisco.id)
 
