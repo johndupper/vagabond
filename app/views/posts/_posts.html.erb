@@ -14,7 +14,7 @@
 		Live, work, or play? <%= post.experience %>
 	</p>
 	<p id="userimage">
-		<%=image_tag(post.photo_url,  :height => 200, :crop => :fill) %>
+		<%=image_tag(post.photo_url,  :height => 150, :crop => :fill) %>
 	</p>
 	<p>
 		Added: <%= post.created_at.strftime("%d %b. %Y") %>
