@@ -6,20 +6,6 @@ class PostsController < ApplicationController
 	redirect_to city_path(@city)
  end
 
-<<<<<<< HEAD
-  def edit
-     @post = Post.find(params[:id])
-   end
-	
-	def update
-    @city = City.find(params[:city_id])
-	@post = @city.posts.update(post_params)
-	
-	redirect_to city_path(@city)
-  	end  
-=======
->>>>>>> e45a851ab52eac7c2b003d7a3ba4f35795ab994b
-
  # working on edit, requires update
  def edit
    # @city = City.find(params[:id])
