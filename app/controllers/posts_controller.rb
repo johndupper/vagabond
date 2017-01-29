@@ -1,52 +1,36 @@
 class PostsController < ApplicationController
-#  def index
-#    @posts = Post.all
-#  end
-
-# def show
-#    @post = Post.find(params[:id])
-#  end
-
-# def new
-#    @post = Post.new
-#  end
 
  def create
-    @city = City.find(params[:city_id])
-	@post = @city.posts.create(post_params)
-	
+   @city = City.find(params[:city_id])
+   @post = @city.posts.create(post_params)
 	redirect_to city_path(@city)
-  end
-  #   if @post.save
-#      redirect_to @post
-#    else
-#      redirect_to post_path(@post)
-#    end
+ end
 
- # def edit
-  #   @post = Post.find(params[:id])
-  # end
-  #
-  # def update
-  #   @post = Post.find(params[:id])
-  #
-  #   if @post.update(post_params)
-  #     redirect_to @post
-  #   else
-  #     render 'edit'
-  #   end
-  # end
+
+ # working on edit, requires update
+ def edit
+   # @city = City.find(params[:id])
+   # @post = Post.find(params[:id])
+ end
+
+ def update
+   @city = City.find(params[:id])
+   @post = Post.find(params[:id])
+   @post.update(post_params)
+   redirect_to @city
+ end
+ # end of edit logic
+
 
  def destroy
-	@city = City.find(params[:city_id])
-    @post = @city.posts.find(params[:id])
-
-    @post.destroy
-    redirect_to city_path(@city)
-  end
+   @city = City.find(params[:city_id])
+   @post = @city.posts.find(params[:id])
+   @post.destroy
+   redirect_to city_path(@city)
+ end
 
  private
-  def post_params
-    params.require(:post).permit(:title, :description, :user, :experience, :photo_url)
-  end
+ def post_params
+   params.require(:post).permit(:title, :description, :user, :experience, :photo_url)
+   end
 end
