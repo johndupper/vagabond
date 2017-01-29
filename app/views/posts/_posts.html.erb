@@ -1,10 +1,33 @@
-<button><%= link_to 'Back', cities_path %></button>
-
 <% @posts.each do |post| %>
-    <h3><%= post.title %> (<%= post.id %>)</h3>
-    <p>Description:<%= post.description %></p>
-    <p>Experience: work, live, or play?: <%= post.experience %></p>
-    <p>USER: <%= post.user %></p>
-    <p>Photo: <%=image_tag(post.photo_url) %></p>
-    <p><%= post.created_at %></p>
+<div class="panel panel-default">
+	<p>
+		Title: <%= post.title %>
+	</p>
+	<p>
+		USER: <%= post.user %>
+	</p>
+
+    <p>
+		Description: <%= post.description %>
+	</p>
+    <p>
+		Live, work, or play? <%= post.experience %>
+	</p>
+	<p id="userimage">
+		<%=image_tag(post.photo_url,  :height => 150, :crop => :fill) %>
+	</p>
+	<p>
+		Added: <%= post.created_at.strftime("%d %b. %Y") %>
+	</p>
+	<p>
+    <button>
+      <%= link_to 'Edit', edit_city_post_path(post.id) %>
+    </button>
+    <button>
+      <%= link_to "Delete", [post.city, post], method: :delete %>
+    </button>
+	</p>
+
+</div>
+
 <% end %>

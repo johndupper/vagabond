@@ -1,7 +1,9 @@
-<h2><%= @city.city_name %>(<%= @city.id %>)</h2>
+<h1><%= @city.city_name %> <%= @city.state %></h1>
 <h4><%= @city.country %></h4>
 
 <%= render 'posts/posts' %>
 
 <h2>Share New:</h2>
 <%= render 'posts/form' %>
+
+<%= link_to 'Back', cities_path %>
