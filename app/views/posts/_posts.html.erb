@@ -1,10 +1,11 @@
 <% @posts.each do |post| %>
 <div class="panel panel-default">
 	<p>
-		Title: <%= post.title %>
+		Title: <%= post.title %> <br>
+    (Post ID: <%= post.id %>)
 	</p>
 	<p>
-		USER: <%= post.user %>
+		User: <%= post.user %>
 	</p>
 
     <p>
@@ -21,7 +22,7 @@
 	</p>
 	<p>
     <button>
-      <%= link_to 'Edit', edit_city_post_path(post.id) %>
+      <%= link_to 'Edit', edit_city_post_path(@city.id, post.id) %>
     </button>
     <button>
       <%= link_to "Delete", [post.city, post], method: :delete %>
