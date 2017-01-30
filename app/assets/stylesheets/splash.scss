@@ -3,3 +3,45 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+.main-text h1 {
+    -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+	color: #3FCFC5;
+	font-family: 'Pacifico', cursive;
+	font-size: 600%;
+	margin-top: 0px;
+	font-weight: bolder;
+	margin-bottom: 30px;
+	font-stretch: ultra-expanded; 
+	text-shadow: 2px 2px #ff0000;
+}
+
+.main-text
+{
+    position: absolute;
+    top: 100px;
+    width: 96%;
+}
+
+.btn {
+	background-color: #0D1210;
+	border: none;
+	color: #3FCFC5;
+	margin-top: 255px;
+}
+
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+	color: #262626;
+}
+
+footer a {
+	color: #262626;
+}
+
+

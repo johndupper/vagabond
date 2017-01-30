@@ -10,16 +10,19 @@
 City.create(city_name: "Atlanta",
             state: "GA",
             country: "USA",
-            description: "Atlanta is the cultural and economic center of the Atlanta metropolitan area, home to 5,710,795 people and the ninth largest metropolitan area in the United States.")
+            description: "Atlanta is the cultural and economic center of the Atlanta metropolitan area, home to 5,710,795 people and the ninth largest metropolitan area in the United States.",
+			city_photo_url: "https://cdn0.vox-cdn.com/thumbor/j8oyICOljrcD9O_vYzGZTMR8m0I=/0x80:1538x945/1600x900/cdn0.vox-cdn.com/uploads/chorus_image/image/48931625/atlanta-skyline-at-dusk.0.jpg")
 
 City.create(city_name: "San Francisco",
             state: "CA",
             country: "USA",
-            description: "The culture of San Francisco is major and diverse in terms of arts, music, cuisine, festivals, museums, and architecture. San Francisco's diversity of cultures along with its eccentricities are so great that they have greatly influenced the country and the world at large over the years.")
+            description: "The culture of San Francisco is major and diverse in terms of arts, music, cuisine, festivals, museums, and architecture. San Francisco's diversity of cultures along with its eccentricities are so great that they have greatly influenced the country and the world at large over the years.",
+			city_photo_url: "https://drscdn.500px.org/photo/122203699/q%3D80_m%3D2000/2fda87d13acef95089537ee3400b4433")
 
 City.create(city_name: "Paris",
             country: "France",
-            description: "France is well-known throughout the world for its culinary arts. Amateurs and professionals flock to France, and particularly Paris, to study and experience food at its finest—gastronomie en France.")
+            description: "France is well-known throughout the world for its culinary arts. Amateurs and professionals flock to France, and particularly Paris, to study and experience food at its finest—gastronomie en France.",
+			city_photo_url: "http://handluggageonly.co.uk/wp-content/uploads/2016/01/Paris-3.jpg")
 
 
 atlanta = City.find(1)
