@@ -2,9 +2,13 @@
 
 <h4><%= @city.country %></h4>
 
+<div>
 <%= render 'posts/posts' %>
+</div>
 
+<div class="new-post-container">
 <h2>Share New:</h2>
 <%= render 'posts/form' %>
+</div>
 
 <%= link_to 'Back', cities_path %>

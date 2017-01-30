@@ -1,26 +1,25 @@
-<%= form_for([@city, @city.posts.build]) do |f| %>
-  <p>
-    <%= f.label      :user %>
-    <%= f.text_field :user %>
+ <div class="input-group">
+	 <%= form_for([@city, @city.posts.build]) do |f| %>
+ 
+<p>
+    <%= f.text_field :user, class: "form-control", placeholder: "user" %>
   </p>
   <p>
-    <%= f.label 	 :title %>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, class: "form-control", placeholder: "title"%>
   </p>
   <p>
-    <%= f.label 	:description %>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, class: "form-control", placeholder: "Describe your experience" %>
   </p>
   <p>
-    <%= f.label 	:experience %>
-    <%= f.text_area :experience %>
+    <%= f.text_area :experience, class: "form-control", placeholder: "live, work, or play" %>
   </p>
   <p>
-    <%= f.label 	:photo_url %>
-    <%= f.text_area :photo_url %>
+    <%= f.text_area :photo_url, class: "form-control", placeholder: "add a photo url" %>
   </p>
 
   <p>
-    <%= f.submit %>
+   <%= f.submit %>
   </p>
+
 <% end %>
+	 </div>

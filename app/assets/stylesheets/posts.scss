@@ -5,12 +5,20 @@
 html {
 //	text-align: center;
 	margin: 50px;
+	font-family: 'PT Sans', sans-serif;
 }
 
 body {
 	background-color: #0D1210;
-	text: white;
 }
+
+.panel {
+	width: 48%;
+	float: left;
+	margin: 5px;
+//	background-color: #0D1210;
+}
+
 
 //.city_post {
 //	border: 1px solid black;
@@ -27,4 +35,9 @@ p img {
 
 p title {
 	font-size: 26px;
+}
+
+.input-group {
+	width: 700px;
+	
 }
