@@ -1,24 +1,31 @@
-# README
+# Welcome to City Sherpa!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+By: [Kimberly Wondoloski](https://github.com/kimberlywondo), [Ramata Diallo](https://github.com/ramata), [Nick Plagman](https://github.com/nplagman), [John Dupper](https://github.com/johndupper)
 
-Things you may want to cover:
+# Description
+City Sherpa is an App built with Ruby on Rails. This App allows travelers from around the world, like Atlanta, San-Francisco and Paris, to share favorite spots they've been to and add their stories.
 
-* Ruby version
+Check it out on Heroku(https://hidden-sierra-54075.herokuapp.com/)!
 
-* System dependencies
+# Features
+* Edit buttons
+* Delete buttons
+* Create post button
+* Back button
 
-* Configuration
+# Upcoming Features
+* Sign up
+* Login
+* Logout
+* Add cities
 
-* Database creation
+# Technologies Used
+* Ruby on Rails
+* Bootstrap
 
-* Database initialization
+# Hosting
+* Heroku(https://hidden-sierra-54075.herokuapp.com/)
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Source control & Project Management
+* Git/Github (https://github.com/johndupper/vagabond)
+* Trello (https://trello.com/b/kaffyBx8/city-sherpa)
